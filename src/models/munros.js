@@ -6,7 +6,7 @@ const Munros = function () {
 }
 
 Munros.prototype.getData = function () {
-  const url = ('https://munroapi.herokuapp.com/api/munros');
+  const url = 'https://munroapi.herokuapp.com/api/munros';
   const request = new Request(url);
   request.get()
     .then((data) => {
