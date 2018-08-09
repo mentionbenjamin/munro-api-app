@@ -7,4 +7,6 @@ const MunroDetailView = require('./views/munro_detail_view.js');
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript Loaded');
+
+  // const munros = new Munros;
 })
