@@ -10,8 +10,9 @@ Munros.prototype.getData = function () {
   const request = new Request(url);
   request.get()
     .then((data) => {
-      this.data = data.message;
-      PubSub.publish('Munros:data-loaded', this.data);
+      console.log(data);
+      this.munros = data;
+      PubSub.publish('Munros:data-loaded', this.munros);
     })
     .catch((error) => {
       console.error(error);
