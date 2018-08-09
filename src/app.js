@@ -1,11 +1,11 @@
 const Munros = require('./models/munros.js');
-const ListView = require('./views/list_view.js');
+const MunroView = require('./views/munro_view.js');
 // const MunroDetailView = require('./views/munro_detail_view.js');
 
 document.addEventListener('DOMContentLoaded', () => {
   const munroContainer = document.querySelector('#munro-container');
-  const listView = new ListView(munroContainer);
-  listView.bindEvents();
+  const munroView = new MunroView(munroContainer);
+  munroView.bindEvents();
 
 
 

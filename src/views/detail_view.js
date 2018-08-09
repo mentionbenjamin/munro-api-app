@@ -25,9 +25,6 @@ DetailView.prototype.render = function () {
   this.detailContainer.appendChild(statList);
 };
 
-// DetailView.prototype.emptyDetails = function () {
-//   this.container.innerHTML = '';
-// };
 
 
 
